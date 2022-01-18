@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html>
+    <style>
+    table {
+        border-collapse: collapse;
+        border: 0px solid black;
+    }
+
+    th,
+    td {
+        border: 0px solid black;
+    }
+
+    table.d {
+        table-layout: fixed;
+        width: 100%;
+    }
+    </style>
+    <style>
+    /* CSS */
+
+    .button-7 {
+        background-color: #0095ff;
+        border: 1px solid transparent;
+        border-radius: 1px;
+        box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans", sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 1.15385;
+        margin: 0;
+        outline: none;
+        padding: 6px 1.5em;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        vertical-align: baseline;
+        white-space: nowrap;
+    }
+
+    .button-7:hover,
+    .button-7:focus {
+        background-color: #07c;
+    }
+
+    .button-7:focus {
+        box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+    }
+
+    .button-7:active {
+        background-color: #0064bd;
+        box-shadow: none;
+    }
+    </style>
+    <table class="d">
+        <td valign="top"><b>Products & Services</b><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="myFunction1()" button class="button-7" role="button">Copy</button>
+            <input type="text" value="Just out of curiosity, who are you with for Broadband at the moment?" id="myInput1">&nbsp;&nbsp;&nbsp;
+            <font color="black"><span class="hovertext" data-hover="Just out of curiosity, who are you with for Broadband at the moment?"><b>Who Broadband</span></font>
+            <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="myFunction2()" button class="button-7" role="button">Copy</button>
+            <input type="text" value="Have you done the speed checks with your postcode and house/flat number of where you want this to be?" id="myInput2">&nbsp;&nbsp;&nbsp;
+            <font color="black"><span class="hovertext" data-hover="Have you done the speed checks with your postcode and house/flat number of where you want this to be?">Have you done the speed</span></font>
+            <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="myFunction3()" button class="button-7" role="button">Copy</button>
+            <input type="text" value="I would like to check if I may – I use a different system and it sometimes produces alternative, possibly more accurate results. What is your door number and post code please and are you near the end of your contract?" id="myInput3">&nbsp;&nbsp;&nbsp;
+            <font color="black"><span class="hovertext" data-hover="I would like to check if I may – I use a different system and it sometimes produces alternative, possibly more accurate results. What is your door number and post code please and are you near the end of your contract?">Ok, I would like to check</span></font>
+            <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="myFunction4()" button class="button-7" role="button">Copy</button>
+            <input type="text" value="The only company where we are unable to end the contract is Virgin, anyone else, then we will just simply take over when your contract ends, when would you like us to take over?" id="myInput4">&nbsp;&nbsp;&nbsp;
+            <font color="black"><span class="hovertext" data-hover="The only company where we are unable to end the contract is Virgin, anyone else, then we will just simply take over when your contract ends, when would you like us to take over?">The only company is virgin</span></font>
+            <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="myFunction5()" button class="button-7" role="button">Copy</button>
+            <input type="text" value="Is there a landline number that you wish to keep? Like, if you were changing Broadband providers then do you wish to keep your telephone number or if you were moving premises then is there a number to take with you? If either of these scenarios are relevant then perhaps you could give me said number and I will let you know if you will be able to keep it."
+                id="myInput5">&nbsp;&nbsp;&nbsp;
+            <font color="black"><span class="hovertext" data-hover="Is there a landline number that you wish to keep? Like, if you were changing Broadband providers then do you wish to keep your telephone number or if you were moving premises then is there a number to take with you? If either of these scenarios are relevant then perhaps you could give me said number and I will let you know if you will be able to keep it.">Keeping landline</span></font>
+            <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="myFunction6()" button class="button-7" role="button">Copy</button>
+            <input type="text" value="Have you considered a more powerful setup? Maybe one of the Pro packages? We have an incredible home broadband (HBB) package called Super-Fast Pro that offers a free backup 4G - WiFi dongle and up-to 3 WiFi Extenders, and all this is included in the price of the Super-Fast Pro Package starting at just £35.00 pm"
+                id="myInput6">&nbsp;&nbsp;&nbsp;
+            <font color="black"><span class="hovertext" data-hover="Have you considered a more powerful setup? Maybe one of the Pro packages? We have an incredible home broadband (HBB) package called Super-Fast Pro that offers a free backup 4G - WiFi dongle and up-to 3 WiFi Extenders, and all this is included in the price of the Super-Fast Pro Package starting at just £35.00 pm">More powerful setup</span></font>
+            <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="myFunction7()" button class="button-7" role="button">Copy</button>
+            <input type="text" value="If you were to go ahead with your purchase today then I would need to give you the Terms and Conditions and conduct an ID and/or Credit Check. I have to type a <u>lot of it out,</u> but when I show it to you, then I need you to <U>carefully</U> read it all and when you have <U>finished</U> and <U>understood</U> it then I need you to type 'I Agree' for me to move forward. I cannot progress further until you agree to the Terms and Conditions. This typing may take a while as there is a lot of information to give and for you to read so please stand by and take your time whilst analysing it."
+                id="myInput7">&nbsp;&nbsp;&nbsp;
+            <font color="black"><span class="hovertext" data-hover="If you were to go ahead with your purchase today then I would need to give you the Terms and Conditions and conduct an ID and/or Credit Check. I have to type a <u>lot of it out,</u> but when I show it to you, then I need you to <U>carefully</U> read it all and when you have <U>finished</U> and <U>understood</U> it then I need you to type 'I Agree' for me to move forward. I cannot progress further until you agree to the Terms and Conditions. This typing may take a while as there is a lot of information to give and for you to read so please stand by and take your time whilst analysing it.">I need to give you terms</span></font>
+            <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="myFunction8()" button class="button-7" role="button">Copy</button>
+            <input type="text" value="I am doing the terms for you now and this will take the longest, I will be going quiet for a while. You will know when I have finished as there will be a request for you to type 'I Agree' <u>at the end</u>." id="myInput8">&nbsp;&nbsp;&nbsp;
+            <font color="black"><span class="hovertext" data-hover="I am doing the terms for you now and this will take the longest, I will be going quiet for a while. You will know when I have finished as there will be a request for you to type 'I Agree' <u>at the end</u>.">I am doing the terms</span></font>
+        </td>
+        <td valign="top"><b>About the Customer</b><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="myFunction9()" button class="button-7" role="button">Copy</button>
+            <input type="text" value="Our home Broadband is supported by Open-Reach, which is essentially the MOST well kept up to date fibre lines in our nation. If our network isn’t satisfying you with speeds that we promise then we will refund you for that period.<br><br>        Our router is state of the art and will reach up to 4x further than the likes of Sky, Three and EE meaning you won’t have to opt for the pro packages unless your Building has dense walls or is substantially larger than average.<br><br>        Our broadband App lets you boost specific devices for periods of time to allow the work from homer's to have faster speeds during the day.<br><br>        Our app is also family friendly, you can cut off specific devices at certain times of the night if you want to restrict your gamer son or daughter from staring at his or her TV until 5am when they got school the next morning.<br><br>        Vodafone: We are fast becoming recognised as one of the leading broadband providers, Open-Reach is forever increasing their wingspan to reach every corner of the country as we expand."
+                id="myInput9">&nbsp;&nbsp;&nbsp;
+            <font color="black"><span class="hovertext" data-hover="Our home Broadband is supported by Open-Reach, which is essentially the MOST well kept up to date fibre lines in our nation. If our network isn’t satisfying you with speeds that we promise then we will refund you for that period.<br><br>        Our router is state of the art and will reach up to 4x further than the likes of Sky, Three and EE meaning you won’t have to opt for the pro packages unless your Building has dense walls or is substantially larger than average.<br><br>        Our broadband App lets you boost specific devices for periods of time to allow the work from homer's to have faster speeds during the day.<br><br>        Our app is also family friendly, you can cut off specific devices at certain times of the night if you want to restrict your gamer son or daughter from staring at his or her TV until 5am when they got school the next morning.<br><br>        Vodafone: We are fast becoming recognised as one of the leading broadband providers, Open-Reach is forever increasing their wingspan to reach every corner of the country as we expand."><b>Our broadband is supported</span></font>
+            <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="myFunction10()" button class="button-7" role="button">Copy</button>
+            <input type="text" value="What is your nationality please?" id="myInput10">&nbsp;&nbsp;&nbsp;
+            <font color="black"><span class="hovertext" data-hover="What is your nationality please?">What is your nationality</span></font>
+            <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="myFunction11()" button class="button-7" role="button">Copy</button>
+            <input type="text" value="To help us support and communicate with you, do you have specific needs we should be aware of? As a reputable supplier of goods and services, Vodafone offer a free vulnerability service, and what this means is that if you are disabled in any way or indeed are in any kind of hardship then we offer a priority service for the equipment purchased through us, so would you say that you <U>are</U>, or you <U>are not</U> vulnerable?"
+                id="myInput11">&nbsp;&nbsp;&nbsp;
+            <font color="black"><span class="hovertext" data-hover="To help us support and communicate with you, do you have specific needs we should be aware of? As a reputable supplier of goods and services, Vodafone offer a free vulnerability service, and what this means is that if you are disabled in any way or indeed are in any kind of hardship then we offer a priority service for the equipment purchased through us, so would you say that you <U>are</U>, or you <U>are not</U> vulnerable?">Are you vulnerable</span></font>
+            <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="myFunction12()" button class="button-7" role="button">Copy</button>
+            <input type="text" value="As you have explained that you are vulnerable then please could you type out 'in your own words' what you would like me to put as this vulnerability? Or would you just like me to copy the above?" id="myInput12">&nbsp;&nbsp;&nbsp;
+            <font color="black"><span class="hovertext" data-hover="As you have explained that you are vulnerable then please could you type out 'in your own words' what you would like me to put as this vulnerability? Or would you just like me to copy the above?">As you are vulnerable</span></font>
+            <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="myFunction13()" button class="button-7" role="button">Copy</button>
+            <input type="text" value="How long have you lived at your current address please? If it is less than 3 years then can you give me the last 3 years’ worth of addresses and the time spent at each of these places? I need this information as part of the Credit Check process."
+                id="myInput13">&nbsp;&nbsp;&nbsp;
+            <font color="black"><span class="hovertext" data-hover="How long have you lived at your current address please? If it is less than 3 years then can you give me the last 3 years’ worth of addresses and the time spent at each of these places? I need this information as part of the Credit Check process.">Current address</span></font>
+            <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="myFunction14()" button class="button-7" role="button">Copy</button>
+            <input type="text" value="Age Restrictions apply to nearly everything that we sell so just so you know, the age restrictions (if they are applicable) will need dealing with by yourself (should you wish to change them) and you would use the Vodaphone App to take care of this. You can either switch them on or off. In fact, the Vodaphone App does a lot more than you may realise! I would recommend taking a proper good look at it, you may be surprised with what it can do! Very ME Rewards Scheme - look that up!"
+                id="myInput14">&nbsp;&nbsp;&nbsp;
+            <font color="black"><span class="hovertext" data-hover="Age Restrictions apply to nearly everything that we sell so just so you know, the age restrictions (if they are applicable) will need dealing with by yourself (should you wish to change them) and you would use the Vodaphone App to take care of this. You can either switch them on or off. In fact, the Vodaphone App does a lot more than you may realise! I would recommend taking a proper good look at it, you may be surprised with what it can do! Very ME Rewards Scheme - look that up!"><font color="red">Age restrictions</span></font>
+            <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="myFunction15()" button class="button-7" role="button">Copy</button>
+            <input type="text" value="Before we continue, would you be interested in any call package? £4.00 pm for evenings and weekends calls OR £8.00 pm for anytime calls." id="myInput15">&nbsp;&nbsp;&nbsp;
+            <font color="black"><span class="hovertext" data-hover="Before we continue, would you be interested in any call package? £4.00 pm for evenings and weekends calls OR £8.00 pm for anytime calls.">Call package</span></font>
+            <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="myFunction16()" button class="button-7" role="button">Copy</button>
+            <input type="text" value="I am doing the ID and/or Credit Check that I mentioned now, could I please have your Bank Account Number and Sort Code and also your name as it appears on your account? (This is where the payments will be taken from)" id="myInput16">&nbsp;&nbsp;&nbsp;
+            <font color="black"><span class="hovertext" data-hover="I am doing the ID and/or Credit Check that I mentioned now, could I please have your Bank Account Number and Sort Code and also your name as it appears on your account? (This is where the payments will be taken from)">I am doing the checks</span></font>
+            <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="myFunction17()" button class="button-7" role="button">Copy</button>
+            <input type="text" value="Is it a Debit Card or a Credit Card that you will be using for your ID check?" id="myInput17">&nbsp;&nbsp;&nbsp;
+            <font color="black"><span class="hovertext" data-hover="Is it a Debit Card or a Credit Card that you will be using for your ID check?">Is it a debit or credit card</span></font>
+            <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="myFunction18()" button class="button-7" role="button">Copy</button>
+            <input type="text" value="Before we go further, can I just check that the mobile number that you've given me is able to receive a text and open a link, and that you also have a valid UK Bank Card handy? The reason that I ask this is because we will need to perform an ID Check as part of the order and the only way that I can do this is by sending you a link via text with a form for you to fill in."
+                id="myInput18">&nbsp;&nbsp;&nbsp;
+            <font color="black"><span class="hovertext" data-hover="Before we go further, can I just check that the mobile number that you've given me is able to receive a text and open a link, and that you also have a valid UK Bank Card handy? The reason that I ask this is because we will need to perform an ID Check as part of the order and the only way that I can do this is by sending you a link via text with a form for you to fill in.">Before we go further</span></font>
+            <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="myFunction19()" button class="button-7" role="button">Copy</button>
+            <input type="text" value="I am sorry to say that on this occasion the ID check has not been accepted.<br><br>If you still wish to take out this device then you can take proof of your ID (passport, driving licence etc) and your address to a local Vodafone store and they will be able to process this for you.<br><br>Because of this we cannot go ahead with this sale for you today, sorry."
+                id="myInput19">&nbsp;&nbsp;&nbsp;
+            <font color="black"><span class="hovertext" data-hover="I am sorry to say that on this occasion the ID check has not been accepted.<br><br>If you still wish to take out this device then you can take proof of your ID (passport, driving licence etc) and your address to a local Vodafone store and they will be able to process this for you.<br><br>Because of this we cannot go ahead with this sale for you today, sorry.">ID check not accepted</span></font>
+            <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="myFunction20()" button class="button-7" role="button">Copy</button>
+            <input type="text" value="I have sent you a text message with your unique web page link. Please click on the link to enter your card payment details securely while I wait on the chat with you. This link will come from our secure payment’s provider - 'Speik'<br><br>You have 5 minutes to complete this or it will expire and we will have to redo this step<br><br>Please let me know when it`s done."
+                id="myInput20">&nbsp;&nbsp;&nbsp;
+            <font color="black"><span class="hovertext" data-hover="I have sent you a text message with your unique web page link. Please click on the link to enter your card payment details securely while I wait on the chat with you. This link will come from our secure payment’s provider - 'Speik'<br><br>You have 5 minutes to complete this or it will expire and we will have to redo this step<br><br>Please let me know when it`s done.">Text message with your unique</span></font>
+            <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="myFunction21()" button class="button-7" role="button">Copy</button>
+            <input type="text" value="My system is saying that some of the info that you gave in the 'Speik' check was incorrect, I have another way but I need the following information to complete this please:<br><br>What is your employment status and do you own or rent your home please?"
+                id="myInput21">&nbsp;&nbsp;&nbsp;
+            <font color="black"><span class="hovertext" data-hover="My system is saying that some of the info that you gave in the 'Speik' check was incorrect, I have another way but I need the following information to complete this please:<br><br>What is your employment status and do you own or rent your home please?">Info was incorrect</span></font>
+            <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="myFunction22()" button class="button-7" role="button">Copy</button>
+            <input type="text" value="Thanks, I am now performing the Credit Check that I mentioned, this bit will take a few minutes so please stand by and read the following statement whilst it is being conducted. This check is for identification, credit scoring and crime prevention purposes. The check involves searching our own records and those held by credit reference agencies who supply us with information including shared credit and fraud prevention agency information. The credit reference agencies will record details of this search. If false or inaccurate information is provided and fraud is identified, details will be passed to fraud prevention agencies to prevent fraud and money laundering. We can provide you with further details about how the information held by fraud prevention agencies may be used online in our Privacy Policy <a href=http://vodafone.co.uk/privacy>(CLICK HERE)</a><BR><BR>Do you need clarification about any aspect of the credit reference search, or is there anything you wish me to repeat?<br><br>This next stage will take a little time, so please stand by and don't leave the chat as you might be disconnected"
+                id="myInput22">&nbsp;&nbsp;&nbsp;
+            <font color="black"><span class="hovertext" data-hover="Thanks, I am now performing the Credit Check that I mentioned, this bit will take a few minutes so please stand by and read the following statement whilst it is being conducted. This check is for identification, credit scoring and crime prevention purposes. The check involves searching our own records and those held by credit reference agencies who supply us with information including shared credit and fraud prevention agency information. The credit reference agencies will record details of this search. If false or inaccurate information is provided and fraud is identified, details will be passed to fraud prevention agencies to prevent fraud and money laundering. We can provide you with further details about how the information held by fraud prevention agencies may be used online in our Privacy Policy <a href=http://vodafone.co.uk/privacy>(CLICK HERE)</a><BR><BR>Do you need clarification about any aspect of the credit reference search, or is there anything you wish me to repeat?<br><br>This next stage will take a little time, so please stand by and don't leave the chat as you might be disconnected">Performing the credit check 1</span></font>
+            <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="myFunction23()" button class="button-7" role="button">Copy</button>
+            <input type="text" value="This <u>WILL</u> take a few minutes, please stand by" id="myInput23">&nbsp;&nbsp;&nbsp;
+            <font color="black"><span class="hovertext" data-hover="This <u>WILL</u> take a few minutes, please stand by">Performing the credit check 2</span></font><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="myFunction24()" button class="button-7" role="button">Copy</button>
+            <input type="text" value="Credit accepted - Congratulations! We are not finished yet, <u>please don't leave as we have lots to do! <u>" id="myInput24">&nbsp;&nbsp;&nbsp;
+            <font color="black"><span class="hovertext" data-hover="Credit accepted - Congratulations! We are not finished yet, <u>please don't leave as we have lots to do! <u>"><b>Credit accepted</span></font>
+            <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="myFunction25()" button class="button-7" role="button">Copy</button>
+            <input type="text" value="Credit Check Failure - I am sorry to say that on this occasion the credit has not been accepted.<br><br>If you've failed the credit check and you're certain that it's a mistake and want to complain or potentially have the decision overturned you can reach out to this email: vodafonecreditescalations.grp@uk.webhelp.com<BR><BR>Unfortunately we would not be able to proceed with the order today for this reason.<BR><BR>I am not given an actual reason as to why it has been declined, sorry but you can re-apply in 90 days from today."
+                id="myInput25">&nbsp;&nbsp;&nbsp;
+            <font color="black"><span class="hovertext" data-hover="Credit Check Failure - I am sorry to say that on this occasion the credit has not been accepted.<br><br>If you've failed the credit check and you're certain that it's a mistake and want to complain or potentially have the decision overturned you can reach out to this email: vodafonecreditescalations.grp@uk.webhelp.com<BR><BR>Unfortunately we would not be able to proceed with the order today for this reason.<BR><BR>I am not given an actual reason as to why it has been declined, sorry but you can re-apply in 90 days from today.">Credit declined</span></font>
+            <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="myFunction26()" button class="button-7" role="button">Copy</button>
+            <input type="text" value="Your credit application has been 'Referred' but this is not necessarily bad news it just means that our credit team need to do a little work on it for you. Please allow me to speak with them on your behalf and try to get this sorted for you, there is going to be a delay, sorry"
+                id="myInput26">&nbsp;&nbsp;&nbsp;
+            <font color="black"><span class="hovertext" data-hover="Your credit application has been 'Referred' but this is not necessarily bad news it just means that our credit team need to do a little work on it for you. Please allow me to speak with them on your behalf and try to get this sorted for you, there is going to be a delay, sorry">Credit referred</span></font>
+            <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="myFunction27()" button class="button-7" role="button">Copy</button>
+            <input type="text" value="Your credit application for credit has been 'Exceeded' but this is not necessarily bad news it just means that our credit team need to do a little work on it for you. Please allow me to speak with them on yur behalf and try to get this sorted for you, there is going to be a delay, sorry"
+                id="myInput27">&nbsp;&nbsp;&nbsp;
+            <font color="black"><span class="hovertext" data-hover="Your credit application for credit has been 'Exceeded' but this is not necessarily bad news it just means that our credit team need to do a little work on it for you. Please allow me to speak with them on yur behalf and try to get this sorted for you, there is going to be a delay, sorry">Credit exceeded</span></font>
+            <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="myFunction28()" button class="button-7" role="button">Copy</button>
+            <input type="text" value="Actually, thinking about it, they don't open until 09.00am - so what would you like to do?" id="myInput28">&nbsp;&nbsp;&nbsp;
+            <font color="black"><span class="hovertext" data-hover="Actually, thinking about it, they don't open until 09.00am - so what would you like to do?">Don't open until 09.00am</span></font>
+            <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </td>
+        <td valign="top"><b>Fulfilment</b><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="myFunction29()" button class="button-7" role="button">Copy</button>
+            <input type="text" value="If you want to track your order then you can use this web site: <a href=https://www.vodafone.co.uk/webcenter/portal/myvodafone/ordertracker>(CLICK HERE)</a> and use this number: " id="myInput29">&nbsp;&nbsp;&nbsp;
+            <font color="black"><span class="hovertext" data-hover="If you want to track your order then you can use this web site: <a href=https://www.vodafone.co.uk/webcenter/portal/myvodafone/ordertracker>(CLICK HERE)</a> and use this number: "><b>Track your order</span></font>
+            <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="myFunction30()" button class="button-7" role="button">Copy</button>
+            <input type="text" value="Do you want to alter your marketing preferences?<br><br>Currently you are opted <U>IN</U> and allowing marketing by 'Email, Market Research, Mail, Personalised Offers in online advertising on 3rd Party Sites/Apps, SMS, Outbound Call, MMS, Use Billing and Account Data' - You are opted <U>OUT</U> of 'Location Usage & Network Data Analysis' - You can switch any, all or none of them on or off, it's your choice? <u>Please decide</u>. <BR><BR>We’ll keep you up to date with our latest products, special offers and rewards. This will be via mail, email, text, MMS, phone and sometimes via personalised advertising on third party sites and apps. Some offers may be tailored <u>just for you</u> based on your account and the products you’ve bought from us.<br><br>We may also ask you to share your thoughts about our products and services. If that’s okay with you, there’s nothing you need to do right now and you can change your preferences at any time in your Vodafone account or the My Vodafone app. Or would you like to leave them as they are?"
+                id="myInput30">&nbsp;&nbsp;&nbsp;
+            <font color="black"><span class="hovertext" data-hover="Do you want to alter your marketing preferences?<br><br>Currently you are opted <U>IN</U> and allowing marketing by 'Email, Market Research, Mail, Personalised Offers in online advertising on 3rd Party Sites/Apps, SMS, Outbound Call, MMS, Use Billing and Account Data' - You are opted <U>OUT</U> of 'Location Usage & Network Data Analysis' - You can switch any, all or none of them on or off, it's your choice? <u>Please decide</u>. <BR><BR>We’ll keep you up to date with our latest products, special offers and rewards. This will be via mail, email, text, MMS, phone and sometimes via personalised advertising on third party sites and apps. Some offers may be tailored <u>just for you</u> based on your account and the products you’ve bought from us.<br><br>We may also ask you to share your thoughts about our products and services. If that’s okay with you, there’s nothing you need to do right now and you can change your preferences at any time in your Vodafone account or the My Vodafone app. Or would you like to leave them as they are?">Marketing preferences</span></font>
+            <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="myFunction31()" button class="button-7" role="button">Copy</button>
+            <input type="text" value="We don't appear to have any valid bank details; may I have your name as it appears on your account and your sort code and your bank account number please?" id="myInput31">&nbsp;&nbsp;&nbsp;
+            <font color="black"><span class="hovertext" data-hover="We don't appear to have any valid bank details; may I have your name as it appears on your account and your sort code and your bank account number please?">No bank details</span></font>
+            <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="myFunction32()" button class="button-7" role="button">Copy</button>
+            <input type="text" value="VERY IMPORTANT!! Service confirmation contact preference: I need you to tell me how you would like to receive your contract, either by Royal Mail or Email please? (nearly finished now)" id="myInput32">&nbsp;&nbsp;&nbsp;
+            <font color="black"><span class="hovertext" data-hover="VERY IMPORTANT!! Service confirmation contact preference: I need you to tell me how you would like to receive your contract, either by Royal Mail or Email please? (nearly finished now)">VERY IMPORTANT</span></font>
+            <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="myFunction33()" button class="button-7" role="button">Copy</button>
+            <input type="text" value="The system is asking me for an install time (on the activation day) but the engineer may not be needed, however, it still needs booking for continuity reasons. It will ask for either AM or PM on your activation day but again, if you already have a working BT/Sky/Virgin/TalkTalk line installed I doubt whether you will need him/her to call - Also do you want to leave any special instructions, if this engineer is actually needed?"
+                id="myInput33">&nbsp;&nbsp;&nbsp;
+            <font color="black"><span class="hovertext" data-hover="The system is asking me for an install time (on the activation day) but the engineer may not be needed, however, it still needs booking for continuity reasons. It will ask for either AM or PM on your activation day but again, if you already have a working BT/Sky/Virgin/TalkTalk line installed I doubt whether you will need him/her to call - Also do you want to leave any special instructions, if this engineer is actually needed?">Engineer</span></font>
+            <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="myFunction34()" button class="button-7" role="button">Copy</button>
+            <input type="text" value="Do you want to be ex-directory or not? Ex-directory means that you will not appear in the phone book. (you may be surprised that some people don`t know what Ex-Directory is so this is why I explained it earlier)" id="myInput34">&nbsp;&nbsp;&nbsp;
+            <font color="black"><span class="hovertext" data-hover="Do you want to be ex-directory or not? Ex-directory means that you will not appear in the phone book. (you may be surprised that some people don`t know what Ex-Directory is so this is why I explained it earlier)">Ex-directory</span></font>
+            <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="myFunction35()" button class="button-7" role="button">Copy</button>
+            <input type="text" value="While I am working in the background can you think of any other item(s) that you would like? Maybe for a friend or family member?" id="myInput35">&nbsp;&nbsp;&nbsp;
+            <font color="black"><span class="hovertext" data-hover="While I am working in the background can you think of any other item(s) that you would like? Maybe for a friend or family member?">Whilst I am working</span></font>
+        </td>
+        </tr>
+        </tbody>
+    </table>
+    <script>
+    function myFunction1() {
+        var copyText = document.getElementById("myInput1");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+        navigator.clipboard.writeText(copyText.value);
+    }
+    </script>
+    <script>
+    function myFunction2() {
+        var copyText = document.getElementById("myInput2");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+        navigator.clipboard.writeText(copyText.value);
+    }
+    </script>
+    <script>
+    function myFunction3() {
+        var copyText = document.getElementById("myInput3");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+        navigator.clipboard.writeText(copyText.value);
+    }
+    </script>
+    <script>
+    function myFunction4() {
+        var copyText = document.getElementById("myInput4");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+        navigator.clipboard.writeText(copyText.value);
+    }
+    </script>
+    <script>
+    function myFunction5() {
+        var copyText = document.getElementById("myInput5");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+        navigator.clipboard.writeText(copyText.value);
+    }
+    </script>
+    <script>
+    function myFunction6() {
+        var copyText = document.getElementById("myInput6");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+        navigator.clipboard.writeText(copyText.value);
+    }
+    </script>
+    <script>
+    function myFunction7() {
+        var copyText = document.getElementById("myInput7");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+        navigator.clipboard.writeText(copyText.value);
+    }
+    </script>
+    <script>
+    function myFunction8() {
+        var copyText = document.getElementById("myInput8");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+        navigator.clipboard.writeText(copyText.value);
+    }
+    </script>
+    <script>
+    function myFunction9() {
+        var copyText = document.getElementById("myInput9");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+        navigator.clipboard.writeText(copyText.value);
+    }
+    </script>
+    <script>
+    function myFunction10() {
+        var copyText = document.getElementById("myInput10");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+        navigator.clipboard.writeText(copyText.value);
+    }
+    </script>
+    <script>
+    function myFunction11() {
+        var copyText = document.getElementById("myInput11");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+        navigator.clipboard.writeText(copyText.value);
+    }
+    </script>
+    <script>
+    function myFunction12() {
+        var copyText = document.getElementById("myInput12");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+        navigator.clipboard.writeText(copyText.value);
+    }
+    </script>
+    <script>
+    function myFunction13() {
+        var copyText = document.getElementById("myInput13");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+        navigator.clipboard.writeText(copyText.value);
+    }
+    </script>
+    <script>
+    function myFunction14() {
+        var copyText = document.getElementById("myInput14");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+        navigator.clipboard.writeText(copyText.value);
+    }
+    </script>
+    <script>
+    function myFunction15() {
+        var copyText = document.getElementById("myInput15");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+        navigator.clipboard.writeText(copyText.value);
+    }
+    </script>
+    <script>
+    function myFunction16() {
+        var copyText = document.getElementById("myInput16");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+        navigator.clipboard.writeText(copyText.value);
+    }
+    </script>
+    <script>
+    function myFunction17() {
+        var copyText = document.getElementById("myInput17");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+        navigator.clipboard.writeText(copyText.value);
+    }
+    </script>
+    <script>
+    function myFunction18() {
+        var copyText = document.getElementById("myInput18");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+        navigator.clipboard.writeText(copyText.value);
+    }
+    </script>
+    <script>
+    function myFunction19() {
+        var copyText = document.getElementById("myInput19");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+        navigator.clipboard.writeText(copyText.value);
+    }
+    </script>
+    <script>
+    function myFunction20() {
+        var copyText = document.getElementById("myInput20");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+        navigator.clipboard.writeText(copyText.value);
+    }
+    </script>
+    <script>
+    function myFunction21() {
+        var copyText = document.getElementById("myInput21");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+        navigator.clipboard.writeText(copyText.value);
+    }
+    </script>
+    <script>
+    function myFunction22() {
+        var copyText = document.getElementById("myInput22");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+        navigator.clipboard.writeText(copyText.value);
+    }
+    </script>
+    <script>
+    function myFunction23() {
+        var copyText = document.getElementById("myInput23");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+        navigator.clipboard.writeText(copyText.value);
+    }
+    </script>
+    <script>
+    function myFunction24() {
+        var copyText = document.getElementById("myInput24");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+        navigator.clipboard.writeText(copyText.value);
+    }
+    </script>
+    <script>
+    function myFunction25() {
+        var copyText = document.getElementById("myInput25");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+        navigator.clipboard.writeText(copyText.value);
+    }
+    </script>
+    <script>
+    function myFunction26() {
+        var copyText = document.getElementById("myInput26");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+        navigator.clipboard.writeText(copyText.value);
+    }
+    </script>
+    <script>
+    function myFunction27() {
+        var copyText = document.getElementById("myInput27");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+        navigator.clipboard.writeText(copyText.value);
+    }
+    </script>
+    <script>
+    function myFunction28() {
+        var copyText = document.getElementById("myInput28");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+        navigator.clipboard.writeText(copyText.value);
+    }
+    </script>
+    <script>
+    function myFunction29() {
+        var copyText = document.getElementById("myInput29");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+        navigator.clipboard.writeText(copyText.value);
+    }
+    </script>
+    <script>
+    function myFunction30() {
+        var copyText = document.getElementById("myInput30");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+        navigator.clipboard.writeText(copyText.value);
+    }
+    </script>
+    <script>
+    function myFunction31() {
+        var copyText = document.getElementById("myInput31");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+        navigator.clipboard.writeText(copyText.value);
+    }
+    </script>
+    <script>
+    function myFunction32() {
+        var copyText = document.getElementById("myInput32");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+        navigator.clipboard.writeText(copyText.value);
+    }
+    </script>
+    <script>
+    function myFunction33() {
+        var copyText = document.getElementById("myInput33");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+        navigator.clipboard.writeText(copyText.value);
+    }
+    </script>
+    <script>
+    function myFunction34() {
+        var copyText = document.getElementById("myInput34");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+        navigator.clipboard.writeText(copyText.value);
+    }
+    </script>
+    <script>
+    function myFunction35() {
+        var copyText = document.getElementById("myInput35");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+        navigator.clipboard.writeText(copyText.value);
+    }
+    </script>
+    <script>
+    function myFunction36() {
+        var copyText = document.getElementById("myInput36");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+        navigator.clipboard.writeText(copyText.value);
+    }
+    </script>
+    <script>
+    function myFunction37() {
+        var copyText = document.getElementById("myInput37");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+        navigator.clipboard.writeText(copyText.value);
+    }
+    </script>
+    <script>
+    function myFunction38() {
+        var copyText = document.getElementById("myInput38");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+        navigator.clipboard.writeText(copyText.value);
+    }
+    </script>
+    <script>
+    function myFunction39() {
+        var copyText = document.getElementById("myInput39");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+        navigator.clipboard.writeText(copyText.value);
+    }
+    </script>
+    <script>
+    function myFunction40() {
+        var copyText = document.getElementById("myInput40");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+        navigator.clipboard.writeText(copyText.value);
+    }
+    </script>
+    <script>
+    function myFunction41() {
+        var copyText = document.getElementById("myInput41");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+        navigator.clipboard.writeText(copyText.value);
+    }
+    </script>
+    </body>
+
+</html>

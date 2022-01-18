@@ -1,0 +1,1723 @@
+<!DOCTYPE html>
+<html>
+    <style>
+    /* width */
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    /* Track */
+
+    ::-webkit-scrollbar-track {
+        background: #ffffff;
+    }
+
+    /* Handle */
+
+    ::-webkit-scrollbar-thumb {
+        background: #fff;
+    }
+
+    /* Handle on hover */
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #fff;
+    }
+    </style>
+    <style>
+    table {
+        border-collapse: collapse;
+        border: 0px solid black;
+    }
+
+    th,
+    td {
+        border: 0px solid black;
+    }
+
+    table.d {
+        table-layout: fixed;
+        width: 100%;
+    }
+    </style>
+    <style>
+    /* CSS */
+
+    .button-7 {
+        background-color: #0095ff;
+        border: 1px solid transparent;
+        border-radius: 1px;
+        box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans", sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 1.15385;
+        margin: 0;
+        outline: none;
+        padding: 6px 1.5em;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        vertical-align: baseline;
+        white-space: nowrap;
+    }
+
+    .button-7:hover,
+    .button-7:focus {
+        background-color: #07c;
+    }
+
+    .button-7:focus {
+        box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+    }
+
+    .button-7:active {
+        background-color: #0064bd;
+        box-shadow: none;
+    }
+    </style>
+    <table class="d">
+        <tr>
+            <tr>
+            </tr>
+            <tr>
+                <td valign="top"> <b>30 Day Normal SIMO</b><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction1()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="113501" id="myInput1">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="113501"><b>1GB</span></font>
+                    <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction2()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="113505" id="myInput2">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="113505">5GB</span></font>
+                    <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction3()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="113504" id="myInput3">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="113504">10GB</span></font>
+                    <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction4()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="113502" id="myInput4">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="113502">SIMO</span></font>
+                    <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction5()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="113508" id="myInput5">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="113508">Lite</span></font>
+                    <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction6()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="113509" id="myInput6">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="113509">Unlimited</span></font>
+                    <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction7()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="113507" id="myInput7">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="113507">Unlimited MAX</span></font>
+                    <BR>
+                    <BR>
+                    <b>12 Month Normal SIMO</b><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction8()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="113185" id="myInput8">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="113185">1GB</span></font>
+                    <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction9()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="114245" id="myInput9">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="114245">2GB</span></font>
+                    <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction10()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="113196" id="myInput10">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="113196">5GB</span></font>
+                    <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction11()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="114247" id="myInput11">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="114247">10GB</span></font>
+                    <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction12()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="113186" id="myInput12">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="113186">20GB</span></font>
+                    <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction13()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="113200" id="myInput13">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="113200">Lite</span></font>
+                    <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction14()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="113203" id="myInput14">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="113203">Unlimited</span></font>
+                    <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction15()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="113199" id="myInput15">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="113199">Unlimited max</span></font>
+                    <BR>
+                    <BR>
+                    <b>12 Month Entertainment SIMO</b><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction16()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="113197" id="myInput16">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="113197">5GB</span></font>
+                    <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction17()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="114246" id="myInput17">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="114246">7GB</span></font>
+                    <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction18()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="114248" id="myInput18">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="114248">13GB</span></font>
+                    <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction19()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="113187" id="myInput19">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="113187">20GB</span></font>
+                    <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction20()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="113204" id="myInput20">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="113204">Unlimited</span></font>
+                    <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction21()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="113202" id="myInput21">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="113202">Unlimited MAX</span></font>
+                    <BR>
+                    <BR>
+                    <b>18 Month Normal SIMO</b><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction22()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="113205" id="myInput22">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="113205"><b>1GB</span></font>
+                    <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction23()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="113216" id="myInput23">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="113216">5GB</span></font>
+                    <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction24()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="113206" id="myInput24">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="113206">20GB</span></font>
+                    <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction25()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="114664" id="myInput25">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="114664">100GB</span></font>
+                    <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction26()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="113220" id="myInput26">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="113220">Lite</span></font>
+                    <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction27()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="113223" id="myInput27">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="113223">Unlimited</span></font>
+                    <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction28()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="113219" id="myInput28">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="113219">Unlimited MAX</span></font>
+                    <BR>
+                    <BR>
+                    <b>18 Month Entertainment SIMO</b><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction29()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="113217" id="myInput29">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="113217">5GB</span></font>
+                    <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction30()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="113207" id="myInput30">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="113207">20GB</span></font>
+                    <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction31()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="113224" id="myInput31">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="113224">Unlimited</span></font>
+                    <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction32()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="113222" id="myInput32">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="113222">Unlimited MAX</span></font>
+                    <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction33()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="113222" id="myInput33">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="113222">!!!</span></font>
+                    <BR>
+                    <BR>
+                    <b>24 Month Normal SIMO</b><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction34()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="3113212" id="myInput34">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="113212"><b>1GB</span></font>
+                    <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction35()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="114688" id="myInput35">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="114688">5GB</span></font>
+                    <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction36()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="113226" id="myInput36">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="113226">20GB</span></font>
+                    <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction37()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="114680" id="myInput37">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="114680">60GB</span></font>
+                    <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction38()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="113232" id="myInput38">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="113232">100GB</span></font>
+                    <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction38a()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="114684" id="myInput38a">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="114684">120GB</span></font>
+                    <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction39()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="113240" id="myInput39">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="113240">Lite</span></font>
+                    <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction40()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="113243" id="myInput40">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="113243">Unlimited</span></font>
+                    <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction41()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="114690" id="myInput41">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="114690">Unlimited MAX</span></font>
+                    <BR>
+                    <BR>
+                    <b>24 Month Entertainment SIMO</b><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction42()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="113237" id="myInput42">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="113237"><b>5GB</span></font>
+                    <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction43()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="113227" id="myInput43">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="113227">20GB</span></font>
+                    <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction44()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="113229" id="myInput44">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="113229">60GB</span></font>
+                    <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction45()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="113233" id="myInput45">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="113233">100GB</span></font>
+                    <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction45a()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="114685" id="myInput45a">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="114685">160GB</span></font>
+                    <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction46()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="113244" id="myInput46">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="113244">Unlimited</span></font>
+                    <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction47()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="113242" id="myInput47">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="113242">Unlimited MAX</span></font>
+                    <br>
+                    <br>
+                    <b>12 Month 2 xTras Normal</b><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction48()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115037" id="myInput48">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115037"><b>2GB</span></font>
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction49()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115038" id="myInput49">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115038"><b>6GB</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction50()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115040" id="myInput50">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115040"><b>25GB</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction51()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115042" id="myInput51">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115042"><b>Unlimited Lite</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction52()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115043" id="myInput52">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115043"><b>Unlimited</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction53()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115045" id="myInput53">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115045"><b>Unlimited MAX</span></font>
+                    <BR>
+                    <BR>
+                    <b>12 Month 2 xTras Entertainment</b><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction54()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115039" id="myInput54">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115039"><b>6GB</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction55()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115041" id="myInput55">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115041"><b>25GB</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction56()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115044" id="myInput56">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115044"><b>Unlimited</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction57()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115046" id="myInput57">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115046"><b>Unlimited MAX</span></font>
+                    <BR>
+                    <BR>
+                    <b>12 Month 3 xTras Normal</b><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction58()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115047" id="myInput58">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115047"><b>2GB</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction59()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115048" id="myInput59">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115048"><b>6GB</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction60()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115050" id="myInput60">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115050"><b>25GB</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction61()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115052" id="myInput61">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115052"><b>Unlimited</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction62()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115053" id="myInput62">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115053"><b>Unlimited Lite</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction63()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115055" id="myInput63">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="1115055"><b>Unlimited MAX</span></font>
+                    <BR>
+                    <BR>
+                    <b>12 Month 3 xTras Entertainment</b><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction64()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115049" id="myInput64">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115049"><b>6GB</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction65()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115051" id="myInput65">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115051"><b>25GB</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction66()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115054" id="myInput66">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115054"><b>Unlimited</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction67()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115056" id="myInput67">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115056"><b>Unlimited MAX</span></font>
+                    <BR>
+                    <BR>
+                    <b>12 Month 4 xTras Normal</b><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction68()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="1115057" id="myInput68">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115057"><b>2GB</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction69()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115058" id="myInput69">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115058"><b>6GB</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction70()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115060" id="myInput70">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115060"><b>25GB</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction71()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115062" id="myInput71">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115062"><b>Unlimited Lite</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction72()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115063" id="myInput72">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115063"><b>Unlimited</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction73()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="1115065" id="myInput73">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115065"><b>Unlimited MAX</span></font>
+                    <BR>
+                    <BR>
+                    <b>12 Month 4 xTras Entertainment</b><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction74()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115059" id="myInput74">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="1115059"><b>6GB</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction75()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115061" id="myInput75">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115061"><b>25GB</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction76()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="1115064" id="myInput76">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115064"><b>Unlimited</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction77()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115066" id="myInput77">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115066"><b>Unlimited MAX</span></font>
+                    <BR>
+                    <br><b>24 Month 2 xTras Normal</b><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction87()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115067" id="myInput87">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115067"><b>2GB</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction79()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115068" id="myInput79">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115068"><b>6GB</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction80()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115070" id="myInput80">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115070"><b>25GB</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction81()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115103" id="myInput81">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115103"><b>50GB</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction82()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115105" id="myInput82">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115105"><b>60GB</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction83()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115107" id="myInput83">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115107"><b>100GB</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction84()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115072" id="myInput84">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115073"><b>Unlimited Lite</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction85()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115073" id="myInput85">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="113501"><b>Unlimited</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction86()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115075" id="myInput86">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115075"><b>Unlimited MAX</span></font>
+                    <BR>
+                    <BR>
+                    <b>24 Month 2 xTras Entertainment</b><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction88()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115069" id="myInput88">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115069"><b>6GB</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction89()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115071" id="myInput89">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115071"><b>25GB</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction90()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115104" id="myInput90">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115104"><b>50GB</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction91()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="113133" id="myInput91">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="113133"><b>100GB</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction92()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115108" id="myInput92">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115108"><b>100GB</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction93()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115074" id="myInput93">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115074"><b>Unlimited</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction94()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115076" id="myInput94">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115076"><b>Unlimited MAX</span></font>
+                    <BR>
+                    <BR>
+                    <b>24 Month 3 xTras Normal</b><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction95()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115077" id="myInput95">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115077"><b>2GB</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction96()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115078" id="myInput96">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115078"><b>6GB</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction97()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115080" id="myInput97">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115080"><b>25GB</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction98()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115115" id="myInput98">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115115"><b>60GB</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction99()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115117" id="myInput99">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115117"><b>100GB</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction100()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115082" id="myInput100">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115082"><b>Unlimited Lite</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction101()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115083" id="myInput101">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115083"><b>Unlimited</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction102()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115085" id="myInput102">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115085"><b>Unlimited MAX</span></font>
+                    <BR>
+                    <BR>
+                    <b>24 Month 3 xTras Entertainment</b><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction103()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115079" id="myInput103">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115079"><b>6GB</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction104()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115081" id="myInput104">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115081"><b>25GB</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction105()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115114" id="myInput105">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115114"><b>50GB</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction106()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115118" id="myInput106">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115118"><b>100GB</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction107()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115084" id="myInput107">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115084"><b>Unlimited</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction108()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115086" id="myInput108">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115086"><b>Unlimited MAX</span></font>
+                    <BR>
+                    <BR>
+                    <b>24 Month 4 xTras Normal</b><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction109()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115087" id="myInput109">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115087"><b>2GB</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction110()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115088" id="myInput110">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115088"><b>6GB</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction111()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115090" id="myInput111">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115090"><b>25GB</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction112()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115123" id="myInput112">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115123"><b>50GB</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction113()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115127" id="myInput113">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115127"><b>100GB</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction114()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115092" id="myInput114">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115092"><b>Unlimited Lite</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction115()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115093" id="myInput115">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115093"><b>Unlimited</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction116()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115095" id="myInput116">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115095"><b>Unlimited MAX</span></font>
+                    <BR>
+                    <BR>
+                    <b>24 Month 4 xTras Entertainment</b><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction117()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115089" id="myInput117">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115089"><b>6GB</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction118()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115091" id="myInput118">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115091"><b>25GB</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction119()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115124" id="myInput119">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115124"><b>50GB</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction120()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115128" id="myInput120">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115128"><b>100GB</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction121()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115094" id="myInput121">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115094"><b>Unlimited</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction122()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="115096" id="myInput122">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="115096"><b>Unlimited MAX</span></font>
+                    <BR>
+                    <BR>
+                    <b>Red</b><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction123()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="114962" id="myInput123">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="114962"><b>2GB</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction124()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="114963" id="myInput124">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="114963"><b>7GB</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction125()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="114964" id="myInput125">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="114964"><b>10GB</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction126()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="114965" id="myInput126">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="114965"><b>13GB</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction127()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="114966" id="myInput127">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="114966"><b>20GB</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction128()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="114967" id="myInput128">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="114967"><b>Unlimited Lite</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction129()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="114968" id="myInput129">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="114968"><b>Unlimited</span></font>
+                    <BR>
+                    <BR>
+                    <b>Red Entertainment</b><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction130()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="114970" id="myInput130">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="114970"><b>20GB & EU</span></font>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="myFunction131()" button class="button-7" role="button">Copy</button>
+                    <input type="text" value="114969" id="myInput131">&nbsp;&nbsp;&nbsp;
+                    <font color="black"><span class="hovertext" data-hover="114969"><b>Unlimited & EU</span></font>
+                </td>
+            </tr>
+            </tbody>
+    </table>
+    </td>
+    <td valign="top">
+        <script>
+        function myFunction1() {
+            var copyText = document.getElementById("myInput1");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction2() {
+            var copyText = document.getElementById("myInput2");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction3() {
+            var copyText = document.getElementById("myInput3");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction4() {
+            var copyText = document.getElementById("myInput4");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction5() {
+            var copyText = document.getElementById("myInput5");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction6() {
+            var copyText = document.getElementById("myInput6");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction7() {
+            var copyText = document.getElementById("myInput7");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction8() {
+            var copyText = document.getElementById("myInput8");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction9() {
+            var copyText = document.getElementById("myInput9");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction10() {
+            var copyText = document.getElementById("myInput10");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction11() {
+            var copyText = document.getElementById("myInput11");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction12() {
+            var copyText = document.getElementById("myInput12");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction13() {
+            var copyText = document.getElementById("myInput13");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction14() {
+            var copyText = document.getElementById("myInput14");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction15() {
+            var copyText = document.getElementById("myInput15");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction16() {
+            var copyText = document.getElementById("myInput16");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction17() {
+            var copyText = document.getElementById("myInput17");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction18() {
+            var copyText = document.getElementById("myInput18");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction19() {
+            var copyText = document.getElementById("myInput19");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction20() {
+            var copyText = document.getElementById("myInput20");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction21() {
+            var copyText = document.getElementById("myInput21");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction22() {
+            var copyText = document.getElementById("myInput22");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction23() {
+            var copyText = document.getElementById("myInput23");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction24() {
+            var copyText = document.getElementById("myInput24");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction25() {
+            var copyText = document.getElementById("myInput25");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction26() {
+            var copyText = document.getElementById("myInput26");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction27() {
+            var copyText = document.getElementById("myInput27");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction28() {
+            var copyText = document.getElementById("myInput28");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction29() {
+            var copyText = document.getElementById("myInput29");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction30() {
+            var copyText = document.getElementById("myInput30");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction31() {
+            var copyText = document.getElementById("myInput31");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction32() {
+            var copyText = document.getElementById("myInput32");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction33() {
+            var copyText = document.getElementById("myInput33");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction34() {
+            var copyText = document.getElementById("myInput34");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction35() {
+            var copyText = document.getElementById("myInput35");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction36() {
+            var copyText = document.getElementById("myInput36");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction37() {
+            var copyText = document.getElementById("myInput37");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction38() {
+            var copyText = document.getElementById("myInput38");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction38a() {
+            var copyText = document.getElementById("myInput38a");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction39() {
+            var copyText = document.getElementById("myInput39");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction40() {
+            var copyText = document.getElementById("myInput40");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction41() {
+            var copyText = document.getElementById("myInput41");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction42() {
+            var copyText = document.getElementById("myInput42");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction43() {
+            var copyText = document.getElementById("myInput43");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction44() {
+            var copyText = document.getElementById("myInput44");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction45() {
+            var copyText = document.getElementById("myInput45");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction45a() {
+            var copyText = document.getElementById("myInput45a");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction46() {
+            var copyText = document.getElementById("myInput46");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction47() {
+            var copyText = document.getElementById("myInput47");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction48() {
+            var copyText = document.getElementById("myInput48");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction49() {
+            var copyText = document.getElementById("myInput49");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction50() {
+            var copyText = document.getElementById("myInput50");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction51() {
+            var copyText = document.getElementById("myInput51");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction52() {
+            var copyText = document.getElementById("myInput52");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction53() {
+            var copyText = document.getElementById("myInput53");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction54() {
+            var copyText = document.getElementById("myInput54");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction55() {
+            var copyText = document.getElementById("myInput55");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction56() {
+            var copyText = document.getElementById("myInput56");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction57() {
+            var copyText = document.getElementById("myInput57");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction58() {
+            var copyText = document.getElementById("myInput58");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction59() {
+            var copyText = document.getElementById("myInput59");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction60() {
+            var copyText = document.getElementById("myInput60");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction61() {
+            var copyText = document.getElementById("myInput61");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction62() {
+            var copyText = document.getElementById("myInput62");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction63() {
+            var copyText = document.getElementById("myInput63");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction64() {
+            var copyText = document.getElementById("myInput64");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction65() {
+            var copyText = document.getElementById("myInput65");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction66() {
+            var copyText = document.getElementById("myInput66");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction67() {
+            var copyText = document.getElementById("myInput67");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction68() {
+            var copyText = document.getElementById("myInput68");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction69() {
+            var copyText = document.getElementById("myInput69");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction70() {
+            var copyText = document.getElementById("myInput70");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction71() {
+            var copyText = document.getElementById("myInput71");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction72() {
+            var copyText = document.getElementById("myInput72");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction73() {
+            var copyText = document.getElementById("myInput73");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction74() {
+            var copyText = document.getElementById("myInput74");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction75() {
+            var copyText = document.getElementById("myInput75");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction76() {
+            var copyText = document.getElementById("myInput76");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction77() {
+            var copyText = document.getElementById("myInput77");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction78) {
+            var copyText = document.getElementById("myInput78");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction79() {
+            var copyText = document.getElementById("myInput79");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction80() {
+            var copyText = document.getElementById("myInput80");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction81() {
+            var copyText = document.getElementById("myInput81");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction82() {
+            var copyText = document.getElementById("myInput82");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction83() {
+            var copyText = document.getElementById("myInput83");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction84() {
+            var copyText = document.getElementById("myInput84");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction85() {
+            var copyText = document.getElementById("myInput85");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction86() {
+            var copyText = document.getElementById("myInput86");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction87() {
+            var copyText = document.getElementById("myInput87");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction88() {
+            var copyText = document.getElementById("myInput88");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction89() {
+            var copyText = document.getElementById("myInput89");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction90() {
+            var copyText = document.getElementById("myInput90");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction91() {
+            var copyText = document.getElementById("myInput91");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction92() {
+            var copyText = document.getElementById("myInput92");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction93() {
+            var copyText = document.getElementById("myInput93");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction94() {
+            var copyText = document.getElementById("myInput94");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction95() {
+            var copyText = document.getElementById("myInput95");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction96() {
+            var copyText = document.getElementById("myInput96");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction97() {
+            var copyText = document.getElementById("myInput97");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction98() {
+            var copyText = document.getElementById("myInput98");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction99() {
+            var copyText = document.getElementById("myInput99");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction100() {
+            var copyText = document.getElementById("myInput100");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction101() {
+            var copyText = document.getElementById("myInput101");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction102() {
+            var copyText = document.getElementById("myInput102");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction103() {
+            var copyText = document.getElementById("myInput103");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction104() {
+            var copyText = document.getElementById("myInput104");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction105() {
+            var copyText = document.getElementById("myInput105");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction106() {
+            var copyText = document.getElementById("myInput106");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction107() {
+            var copyText = document.getElementById("myInput107");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction108() {
+            var copyText = document.getElementById("myInput108");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction109() {
+            var copyText = document.getElementById("myInput109");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction110() {
+            var copyText = document.getElementById("myInput110");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction111() {
+            var copyText = document.getElementById("myInput111");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction112() {
+            var copyText = document.getElementById("myInput112");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction113() {
+            var copyText = document.getElementById("myInput113");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction114() {
+            var copyText = document.getElementById("myInput114");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction115() {
+            var copyText = document.getElementById("myInput115");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction116() {
+            var copyText = document.getElementById("myInput116");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction117() {
+            var copyText = document.getElementById("myInput117");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction118() {
+            var copyText = document.getElementById("myInput118");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction119() {
+            var copyText = document.getElementById("myInput119");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction120() {
+            var copyText = document.getElementById("myInput120");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction121() {
+            var copyText = document.getElementById("myInput121");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction122() {
+            var copyText = document.getElementById("myInput122");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction123() {
+            var copyText = document.getElementById("myInput123");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction124() {
+            var copyText = document.getElementById("myInput124");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction125() {
+            var copyText = document.getElementById("myInput125");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction126() {
+            var copyText = document.getElementById("myInput126");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction127() {
+            var copyText = document.getElementById("myInput127");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction128() {
+            var copyText = document.getElementById("myInput128");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction129() {
+            var copyText = document.getElementById("myInput129");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        <script>
+        function myFunction130() {
+            var copyText = document.getElementById("myInput130");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
+        </body>
+
+</html>

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+    </head>
+    <style type="text/css">
+    body {
+        position: fixed;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    .stretch {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        overflow: hidden;
+    }
+
+    #crawl-container {
+        perspective: calc(100vh * 0.4);
+    }
+
+    #crawl {
+        color: #f5c91c;
+        position: absolute;
+        width: 110%;
+        left: -5%;
+        bottom: -5%;
+        height: 200%;
+        overflow: hidden;
+
+        transform: rotate3d(1, 0, 0, 45deg);
+        transform-origin: 50% 100%;
+
+        mask-image: linear-gradient( rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.66),
+        rgba(0, 0, 0, 1));
+
+        -webkit-mask-image: -webkit-linear-gradient( rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.66),
+        rgba(0, 0, 0, 1));
+    }
+
+    #crawl-content {
+        font-family: "Roboto";
+        font-size: calc(100vw * 0.074);
+        letter-spacing: 0.09em;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+    }
+
+    #crawl p {
+        text-align: justify;
+        width: 100%;
+        margin: 0 0 1.25em 0;
+        line-height: 1.25em;
+    }
+
+    #crawl h1 {
+        font-size: 1em;
+        margin: 0 0 0.3em 0;
+    }
+
+    #crawl h2 {
+        font-size: 1.5em;
+        margin: 0 0 0.7em 0;
+    }
+
+    #crawl h1,
+    #crawl h2 {
+        text-align: center;
+    }
+    </style>
+    <style>
+    *,
+    ::before,
+    ::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background: #ffffff;
+    }
+
+
+    .container {
+        width: 400px;
+        height: 400px;
+        perspective: 1000px;
+        margin: 170px auto 0;
+    }
+
+    .cube {
+        transform-style: preserve-3d;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        animation: spin 60s infinite linear;
+    }
+
+    .face {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: repeating-linear-gradient(0deg, rgba(70, 70, 70, 0.2) 0px, rgba(70, 70, 70, 0.2) 1px, transparent 1px, transparent 21px), repeating-linear-gradient(90deg, rgba(70, 70, 70, 0.2) 0px, rgba(70, 70, 70, 0.2) 1px, transparent 1px, transparent 21px), linear-gradient(90deg, rgb(155, 155, 155), rgb(355, 255, 255));
+    }
+
+    .top {
+        transform: rotateX(90deg) translateZ(100px);
+    }
+
+    .bottom {
+        transform: rotateX(-90deg) translateZ(100px);
+    }
+
+    .right {
+        transform: rotateY(90deg) translateZ(100px);
+    }
+
+    .left {
+        transform: rotateY(-90deg) translateZ(100px);
+    }
+
+    .front {
+        transform: rotateX(0deg) translateZ(100px);
+    }
+
+    .back {
+        transform: rotateX(-180deg) translateZ(100px);
+    }
+
+    @keyframes spin {
+        from {
+            transform: rotateX(0deg) rotateY(0deg);
+        }
+        to {
+            transform: rotateX(360deg) rotateY(360deg);
+        }
+    }
+    </style>
+
+    <body>
+        <canvas id="canvas" class="stretch"></canvas>
+        <div id="crawl-container" class="stretch">
+            <div id="crawl">
+                <div id="crawl-content">
+                    <h1>
+                        ; requires /coff switch on 6.15 and earlier versions .386 .model small,c .stack 1000h .data msg db "Hello world!",0 .code includelib libcmt.lib includelib libvcruntime.lib includelib libucrt.lib includelib legacy_stdio_definitions.lib extrn printf:near
+                        extrn exit:near public main main proc push offset msg call printf push 0 call exit main endp end
+                    </h1>
+                    <h1>
+                        mov eax, 5
+                    </h1>
+                    <h1>
+                        01001001
+                    </h1>
+                    <h1>
+                        --------
+                    </h1>
+                    <h1>
+                        01000010 01000101 01010100
+                    </h1>
+                    <h1>
+                        --------
+                    </h1>
+                    <h1>
+                        01010100 01001000 01000001 01010100
+                    </h1>
+                    <h1>
+                        --------
+                    </h1>
+                    <h1>
+                        01011001 01001111 01010101
+                    </h1>
+                    <h1>
+                        --------
+                    </h1>
+                    <h1>
+                        01010111 01001001 01010011 01001000
+                    </h1>
+                    <h1>
+                        --------
+                    </h1>
+                    <h1>
+                        01010100 01001000 01000001 01010100
+                    </h1>
+                    <h1>
+                        --------
+                    </h1>
+                    <h1>
+                        01011001 01001111 01010101
+                    </h1>
+                    <h1>
+                        --------
+                    </h1>
+                    <h1>
+                        01010111 01000101 01010010 01000101
+                    </h1>
+                    <h1>
+                        --------
+                    </h1>
+                    <h1>
+                        01010100 01001000 01001001 01010011
+                    </h1>
+                    <h1>
+                        --------
+                    </h1>
+                    <h1>
+                        01010011 01001101 01000001 01010010 01010100
+                    </h1>
+                    <h1>
+                        -------- --------
+                    </h1>
+                    <h1>
+                        4920424554205400000000000000000000000000000000000000000000000000000000000000000000000000
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="cube">
+                <div class="face front"></div>
+                <div class="face back"></div>
+                <div class="face right"></div>
+                <div class="face left"></div>
+                <div class="face top"></div>
+                <div class="face bottom"></div>
+            </div>
+        </div>
+    </body>
+    <script>
+    const canvas = document.getElementById("canvas");
+    const c = canvas.getContext("2d");
+
+    let w;
+    let h;
+
+    const setCanvasExtents = () => {
+        w = document.body.clientWidth;
+        h = document.body.clientHeight;
+        canvas.width = Math.min(1600, w);
+        canvas.height = Math.min(900, h);
+    };
+
+    setCanvasExtents();
+
+    const crawl = document.getElementById("crawl");
+    const crawlContent = document.getElementById("crawl-content");
+    const crawlContentStyle = crawlContent.style;
+
+    // start crawl at bottom of 3d plane
+    let crawlPos = crawl.clientHeight;
+
+    const makeStars = count => {
+        const out = [];
+        for (let i = 0; i < count; i++) {
+            const s = {
+                x: Math.random() * 1600 - 800,
+                y: Math.random() * 900 - 450,
+                z: Math.random() * 1000
+            };
+            out.push(s);
+        }
+        return out;
+    };
+
+    let stars = makeStars(2000);
+
+    window.onresize = () => {
+        setCanvasExtents();
+    };
+
+    const clear = () => {
+        c.fillStyle = "black";
+        c.fillRect(0, 0, canvas.width, canvas.height);
+    };
+
+    const putPixel = (x, y, brightness) => {
+        const intensity = brightness * 255;
+        const rgb = "rgb(" + intensity + "," + intensity + "," + intensity + ")";
+        c.fillStyle = rgb;
+        c.fillRect(x, y, 1, 1);
+    };
+
+    const moveStars = distance => {
+        const count = stars.length;
+        for (var i = 0; i < count; i++) {
+            const s = stars[i];
+            s.z -= distance;
+            if (s.z <= 1) {
+                s.z += 999;
+            }
+        }
+    };
+
+    const moveCrawl = distance => {
+        crawlPos -= distance;
+        crawlContentStyle.top = crawlPos + "px";
+
+        // if we've scrolled all content past the top edge
+        // of the plane, reposition content at bottom of plane
+        if (crawlPos < -crawlContent.clientHeight) {
+            crawlPos = crawl.clientHeight;
+        }
+    };
+
+    const paintStars = () => {
+        const cx = canvas.width / 2;
+        const cy = canvas.height / 2;
+
+        const count = stars.length;
+        for (var i = 0; i < count; i++) {
+            const star = stars[i];
+
+            const x = cx + star.x / (star.z * 0.001);
+            const y = cy + star.y / (star.z * 0.001);
+
+            if (x < 0 || x >= w || y < 0 || y >= h) {
+                continue;
+            }
+
+            const d = star.z / 1000.0;
+            const b = 1 - d * d;
+
+            putPixel(x, y, b);
+        }
+    };
+
+    let prevTime;
+    const init = time => {
+        prevTime = time;
+        requestAnimationFrame(tick);
+    };
+
+    const tick = time => {
+        let elapsed = time - prevTime;
+        prevTime = time;
+
+        moveStars(elapsed * 0.02);
+
+        // time-scale of crawl, increase factor to go faster
+        moveCrawl(elapsed * 0.06);
+
+        clear();
+        paintStars();
+
+        requestAnimationFrame(tick);
+    };
+
+    requestAnimationFrame(init);
+    </script>
+
+</html>
